@@ -1,0 +1,226 @@
+.dine_slider_section #first-slider .bx-wrapper .bx-pager {
+    top: 40%;
+    transform: inherit;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+#first-slider .bx-wrapper .bx-pager.bx-default-pager a {
+    border: 1px solid #0c2046;
+    background: none;
+    width: 12px;
+    height: 12px;
+    margin: 4px 5px;
+    border-radius: 10px;
+}
+.bxslider {
+    margin: 0;
+    padding: 0;
+}
+.dine_slider_box {
+    background: #f5efe7;
+    position: relative;
+    min-height: 631px;
+}
+.flower_bg:before {
+    display: none;
+}
+.flower_bg:after {
+    display: none;
+}
+.dine_align_inner.flower_bg.left_bg.right_flowerbg:before {
+    display: none;
+}
+.dine_align_inner.flower_bg.left_bg.right_flowerbg:after {
+    display: none;
+}
+.flower_bg:before {
+    display: none;
+}
+.flower_bg:after {
+    display: none;
+}
+.dine_align_inner.flower_bg.left_bg.right_flowerbg:before {
+    display: none;
+}
+.dine_align_inner.flower_bg.left_bg.right_flowerbg:after {
+    display: none;
+}
+.flower_bg:before {
+    display: none;
+}
+.flower_bg:after {
+    display: none;
+}
+.dine_align_inner.flower_bg.left_bg.right_flowerbg:before {
+    display: none;
+}
+.dine_align_inner.flower_bg.left_bg.right_flowerbg:after {
+    display: none;
+}
+.dine_img_box {
+    width: 64%;
+    float: left;
+}
+
+.dine_img_box img {
+    width: 100%;
+}
+.dine_right_box {
+    background: rgba(237, 226, 212, 0.2);
+    width: 36%;
+    position: absolute;
+    right: 96px;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    border: 2px solid #0c2046;
+}
+.dine_slider_section2 .dine_right_box {
+    left: 96px;
+    right: auto;
+}
+.dine_right_box {
+    width: 42%;
+}
+.dine_right_box {
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: auto;
+    transform: inherit;
+    -webkit-transform: inherit;
+}
+.dine_slider_section2 .dine_right_box {
+    left: 0;
+    border: none;
+}
+
+.dine_right_box {
+    border: none;
+}
+.dine_right_box {
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: auto;
+    transform: inherit;
+    -webkit-transform: inherit;
+}
+.dine_slider_section2 .dine_right_box {
+    left: 0;
+    border: none;
+}
+.dine_right_inner {
+    padding: 35px 20px;
+    width: 78.3%;
+    text-align: center;
+    float: right;
+    background: #ede2d4;
+}
+
+.dine_right_inner h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #0c2045;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dine_right_inner p {
+    font-size: 14px;
+    color: #000;
+    line-height: 28px;
+}
+.dine_slider_section2 .dine_right_inner {
+    float: left;
+}
+.dine_right_inner {
+    width: 100%;
+    float: none;
+}
+.dine_slider_section2 .dine_right_inner {
+    float: none;
+}
+.dine_slider_section2 .dine_right_inner .book_now_btn {
+    min-width: 131px;
+}
+.dine_right_inner {
+    width: 100%;
+    float: none;
+}
+.dine_slider_section2 .dine_right_inner {
+    float: none;
+}
+.dine_slider_section2 .dine_right_inner .book_now_btn {
+    min-width: 171px;
+}
+.book_now_btn:focus {
+    color: #a4843e;
+}
+@media screen and (min-width:992px) and (max-width:1024px) {
+    .book_now_btn {
+        min-width: 128px;
+        margin: 11px 0 0 2px;
+    }
+    .wedding_slider_box .book_now_btn {
+        min-width: 123px;
+        font-size: 13px;
+    }
+    .book_now_btn {
+        min-width: 121px;
+        margin: 11px 6px 0 0;
+    }
+    .book_now_btn.stay_booknow {
+        margin: 9px auto;
+        display: table;
+    }
+    .dine_slider_section2 .dine_right_inner .book_now_btn {
+        min-width: 131px;
+    }
+    .book_now_btn {
+        min-width: 121px;
+        margin: 11px 6px 0 0;
+    }
+    .book_now_btn.stay_booknow {
+        margin: 9px auto;
+        display: table;
+    }
+    .dine_slider_section2 .dine_right_inner .book_now_btn {
+        min-width: 171px;
+    }
+}
+.book_table_btn {
+    width: auto;
+    padding: 7px 15px;
+    margin-top: 20px;
+}
