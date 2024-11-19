@@ -3,11 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* han */
 .nav-link {
   color: black;
   font-weight: bold;
   font-size: 1rem;
 }
+
 .nav-item .nav-link:hover {
   color: red;
   font-weight: bold;
