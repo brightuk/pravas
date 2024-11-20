@@ -16,7 +16,12 @@
     />
     <link rel="stylesheet" href="./style.css" />
 
-
+<!-- Animation -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<!--  -->
     <!--  -->
     
     <link rel="stylesheet" href="css/bootstrap.css+owl.carousel.css+style.css+animate.css+jquery.bxslider.css+font-awesome.min.css+jquery.bxslider.css+lightbox.min.css.pagespeed.cc.YsRqhTHzrq.css">
@@ -763,7 +768,258 @@
             
     </div>
     
-  
+<!-- Gallery  -->
+<div class="container div4">
+  <div class="row">
+    <div class="row  g-3">
+      <div class="col  d-flex justify-content-center">
+
+
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label id="first" class="btn btn-outline-dark" for="btnradio1">FIRST</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label id="second" class="btn btn-outline-dark" for="btnradio2">SECOND</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label id="third" class="btn btn-outline-dark" for="btnradio3">THIRD</label>
+        </div>
+
+
+        <!-- <button
+          type="button"
+          id="first"
+          class="btn rounded-0 border-0 btn-outline-dark  me-3"
+        >
+          ONEE
+        </button>
+        <button
+          type="button"
+          id="second"
+          class="btn rounded-0 border-0 btn-outline-dark me-3"
+        >
+          SECOND
+        </button>
+        <button
+          type="button"
+          id="third"
+          class="btn rounded-0 border-0 btn-outline-dark me-3"
+        >
+         THIRD
+        </button> -->
+      </div>
+    </div>
+  </div>
+  <div id="gallery1" class="row gallery">
+    <div class="row m-0 p-0 my-2 part1 g-3">
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/74d79d77-0713-4f54-bcec-bdaf974d1750cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/de5d3277-d679-46e5-956a-2499aa578332cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/f7409ddc-7668-4193-864e-c44f071d5c60cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/2afc72a9-1bb8-46a4-9f55-1ae0e5ff67e4cmp.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="row m-0 p-0 part2 g-3">
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/2ef83835-d3bb-4e9f-a2cb-6ffe850874e7cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/63c00938-3af5-4f15-9948-7d2e735c13e1cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/74d79d77-0713-4f54-bcec-bdaf974d1750cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/de5d3277-d679-46e5-956a-2499aa578332cmp.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Modal for Full-Screen Image -->
+  <div id="imageModal" class="modal">
+    <span style="color: white;opacity: 1;" class="close">&times;</span>
+    <img class="modal-content" id="fullScreenImage" />
+    <button s
+      class="prev btn text-white border-0 rounded-50"
+      onclick="changeImage(-1)"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/11181/11181440.png"
+        alt=""
+      />
+    </button>
+    <button class="next text-white btn border-0" onclick="changeImage(1)">
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/11181/11181468.png"
+        alt=""
+      />
+    </button>
+  </div>
+
+  <div id="gallery2" class="row gallery2">
+    <div class="row m-0 p-0 part1 g-3 my-2">
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="animate__animated animate__zoomIn"
+          src="https://plus.unsplash.com/premium_photo-1661963123153-5471a95b7042?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGFsbHxlbnwwfHwwfHx8MA%3D%3D"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="animate__animated animate__zoomIn"
+          src="https://plus.unsplash.com/premium_photo-1661907977530-eb64ddbfb88a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWwlMjBoYWxsfGVufDB8fDB8fHww"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="animate__animated animate__zoomIn"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRihwDNeLpqhljk1wLTPLIJ6kbNS0YmvttRQZTUK6A1bcV6tyM8DyAbqlkzWyfyp91b7g8&usqp=CAU"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="animate__animated animate__zoomIn"
+          src="https://media.istockphoto.com/id/1369030854/photo/3d-render-of-luxury-hotel-lobby-and-reception.jpg?s=612x612&w=0&k=20&c=obw_JfMCUfb26jO0JkYSiXOkc8Tli9vPsGmw3fLgjIc="
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="row m-0 p-0 part2 g-3">
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="animate__animated animate__zoomIn"
+          src="https://media.istockphoto.com/id/1181456782/photo/3d-render-of-luxury-hotel-lobby-and-reception.jpg?s=612x612&w=0&k=20&c=w5yIBYGq0-yPeM-_exf0paBcm6mtZB2qYaUlKQwQBrA="
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="animate__animated animate__zoomIn"
+          src="https://media.gettyimages.com/id/1333257950/photo/digitally-rendered-image-of-a-five-star-hotel-interior.jpg?s=612x612&w=gi&k=20&c=bJrbUf1qRSC1pGi07sV3eWzHzMRS8ACg6awO76582HA="
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="animate__animated animate__zoomIn"
+          src="https://c8.alamy.com/comp/R5T3TH/modern-and-luxury-hotel-lobby-reception-R5T3TH.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="animate__animated animate__zoomIn"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZKAFkjyAIS6ic02QhWH2K5W4aLu6nftF1Gk5MrXyxW7c2L4aTplfy44W66Qyk8o71P4I&usqp=CAU"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  <div id="gallery3" class="row gallery3">
+    <div class="row m-0 p-0 g-3 my-2 part1">
+      <div class="col-sm-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/74d79d77-0713-4f54-bcec-bdaf974d1750cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/de5d3277-d679-46e5-956a-2499aa578332cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/f7409ddc-7668-4193-864e-c44f071d5c60cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/2afc72a9-1bb8-46a4-9f55-1ae0e5ff67e4cmp.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="row m-0 p-0 g-3 part2">
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/2ef83835-d3bb-4e9f-a2cb-6ffe850874e7cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/63c00938-3af5-4f15-9948-7d2e735c13e1cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/74d79d77-0713-4f54-bcec-bdaf974d1750cmp.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <img
+          class="img-fluid animate__animated animate__zoomIn"
+          src="https://madrassquare.com/wp-content/uploads/2024/10/de5d3277-d679-46e5-956a-2499aa578332cmp.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+  <!--ends Gallery  -->
 
   <script>
       eval(mod_pagespeed_2xVASK7807);
@@ -815,6 +1071,80 @@
       crossorigin="anonymous"
     ></script>
 
+
+    <script>
+      var but1 = document.getElementById("first");
+      var but2 = document.getElementById("second");
+      var but3 = document.getElementById("third");
+      var gallery1 = document.getElementById("gallery1");
+      var gallery2 = document.getElementById("gallery2");
+      var gallery3 = document.getElementById("gallery3");
+
+      but1.addEventListener("click", () => {
+        gallery1.style.display = "block";
+        gallery2.style.display = "none";
+        gallery3.style.display = "none";
+      });
+      but2.addEventListener("click", () => {
+        gallery1.style.display = "none";
+        gallery2.style.display = "block";
+        gallery3.style.display = "none";
+      });
+      but3.addEventListener("click", () => {
+        gallery1.style.display = "none";
+        gallery2.style.display = "none";
+        gallery3.style.display = "block";
+      });
+    </script>
+    <script>
+      let currentImageIndex = 0;
+      const images = document.querySelectorAll(".animate__zoomIn");
+      const modal = document.getElementById("imageModal");
+      const fullScreenImage = document.getElementById("fullScreenImage");
+      const closeBtn = document.querySelector(".close");
+
+      // Open image in full screen
+      images.forEach((img, index) => {
+        img.addEventListener("click", () => {
+          currentImageIndex = index; // Store the index of the clicked image
+          openModal();
+        });
+      });
+
+      closeBtn.addEventListener("click", closeModal);
+
+      // Open the modal with the full-screen image
+      function openModal() {
+        modal.style.display = "block";
+        modal.style.filter = "brightness(100%)";
+        updateImage();
+      }
+
+      // Close the modal
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      // Update the full-screen image
+      function updateImage() {
+        const src = images[currentImageIndex].src;
+
+        fullScreenImage.src = src;
+      }
+
+      // Change image (next/prev)
+      function changeImage(direction) {
+        currentImageIndex += direction;
+
+        if (currentImageIndex < 0) {
+          currentImageIndex = images.length - 1;
+        } else if (currentImageIndex >= images.length) {
+          currentImageIndex = 0;
+        }
+
+        updateImage();
+      }
+    </script>
     <script>
       function myFun(small) {
         var bigImg = document.getElementById("bigImg");
