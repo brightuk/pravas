@@ -269,7 +269,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
          
           </div>
           <div class="offcanvas-body justify-content-center">
-            <ul class="navbar-nav m-0 p-0" id="offcanvasRight">
+            <ul class="navbar-nav m-0 p-0 vn" id="offcanvasRight">
               <li class="nav-item">
                 <a  class="m-2 nav-link text-sm-danger home" href="">HOME  <div  class="vr ms-2"></div> </a>
                 
@@ -300,12 +300,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 <a class="m-2 nav-link" href="">CONTACT</a>
                 <hr class="border d-lg-none border-dark">
               </li>
-
-              <li class="nav-item"><button id="btnshow" class="m-2 nav-link">ENQUIRY <div class="vr ms-2"></div></button>
+              <li class="nav-item"><button id="btnshow" class="m-2 btn px-5  rounded-5 btn-secondary nav-link">ENQUIRY </button>
                 <hr class="border d-lg-none border-dark">
               </li>
+
+              
               
             </ul>
+            
 
             <div class="row d-lg-none  g-2 ">
               <div class="col-12 d-flex  t align-items-center text-dark">
@@ -1136,6 +1138,70 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         
       }
     }
+    #btnshow{
+      color: white;
+
+    }
+    #btnshow:hover{
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+    }
+    #submit{
+      color: white;
+      background-color: rgb(128, 106, 4);
+    }
+    #submit:hover{
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+    }
+
+    .form-con{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: none;
+      border: 1px solid #a1a1a1;
+      outline: none;
+      padding: 16px;
+      border-radius: 5px;
+      z-index: 1;
+  }
+  
+.inputs{
+    width: 300px;
+    height: 48px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+  .form-lab{
+      position: absolute;
+      left: 13px;
+      top: 13px;
+      color: #a1a1a1;
+      background-color: white;
+      padding: 0 6px;
+      font-size: 14px;
+      transition: 0.3s;
+  }
+  .form-con:focus+ .form-lab{
+      top: -8px;
+      z-index: 2;
+      color: #1B66C9;
+      font-weight: 900;
+  }
+  .form-con:focus{
+      border: 1px solid #1B66C9;
+  }
+  .form-con:not(:focus):valid+lab{
+      top: -8px;
+      z-index: 2;
+  }
+    
     
   </style>
 
@@ -1146,25 +1212,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <h2 class="text-center">Make an Enquiry</h2>
 
       </div>
-      <div class="row ">
-        <div class="col-12 form-floating mb-3 inputs">
-          <input type="text" class="form-control form-control-lg"  id="floatingInput" placeholder="Enter Your Name">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12  mb-3 inputs">
+          <input type="text" class="form-con" required>
+          <label for="" class="form-lab">Email your Name</label>
           
-          <label for="floatingInput">Enter Your Name</label>
+          
         </div>
-        <div class="col-12 form-floating mb-3">
-          <input type="text" class="form-control form-control-lg "  id="floatingInput" placeholder="Enter Your Phone No.">
-          <label for="floatingInput">Enter Your Phone No.</label>
+        <div class="col-12  mb-3 inputs">
+          <input type="text" class="form-con" required>
+          <label for="" class="form-lab">Email or phone</label>
         </div>
-        <div class="col-12 form-floating mb-3">
-          <input type="text" class="form-control form-control-lg "  id="floatingInput" placeholder="Enter Your Email">
-          <label for="floatingInput">Enter Your Email</label>
+        <div class="col-12  mb-3 inputs">
+          <input type="text" class="form-con" required>
+          <label for="" class="form-lab">Email or phone</label>
         </div>
        
       </div>
       <div class="row ">
         <div class="col d-flex justify-content-center mt-3">
-          <button class="">Submit</button>
+          <button id="submit" class="m-2 btn px-5  rounded-5 btn-secondary nav-link">ENQUIRY </button>
         </div>
       </div>
     </div>
