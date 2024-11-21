@@ -346,3 +346,34 @@
 .github:hover {
   color: black;
 }
+/* Footer styles */
+.footer {
+  background-color: #eaddca;
+}
+
+.footer-p div p {
+  font-family: "Mulish", "sans-serif";
+}
+
+.footer-bottom p,
+.footer-bottom p a {
+  color: #f8f9fa;
+}
+
+.fo-heading,
+.footer-col {
+  font-family: "Mulish", "sans-serif";
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.footer-col ul li:hover {
+  color: #ec5800;
+}
+
+.footer-col ul li i {
+  font-size: 20px;
+  color: black;
+}
