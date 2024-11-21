@@ -290,9 +290,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 <hr class="border d-lg-none border-dark">
          
               </li>
-              <li class="nav-item"><a class="m-2 nav-link" href="">BLOG <div class="vr ms-2"></div></a>
-                <hr class="border d-lg-none border-dark">
-              </li>
+              
               
               <li class="nav-item">
                 <a class="m-2 nav-link" href="">PRIVACY POLICY <div class="vr ms-2"></div></a>
@@ -300,6 +298,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               </li>
               <li class="nav-item ">
                 <a class="m-2 nav-link" href="">CONTACT</a>
+                <hr class="border d-lg-none border-dark">
+              </li>
+
+              <li class="nav-item"><button id="btnshow" class="m-2 nav-link">ENQUIRY <div class="vr ms-2"></div></button>
                 <hr class="border d-lg-none border-dark">
               </li>
               
@@ -1087,6 +1089,87 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 </div>
   <!--ends Gallery  -->
 
+  <style>
+    #form-show{
+      
+      position: fixed;
+      top: 20%;
+      left: 35%;
+      z-index: 10;
+      width: 500px;
+      background-color: white;
+      
+      
+    }
+    #form-show .inputs input{
+      padding: 15px;
+      line-height: 10px;
+      
+      
+    }
+    .row{
+      margin-top: 10px;
+    }
+    #form-show input{
+      margin-top: 10px;
+      
+    }
+    .second{
+      position: relative;
+    }
+    .btn-form{
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+    @media screen and (max-width: 576px) {
+      #form-show{
+        
+        position: fixed;
+        top: 25%;
+        left: 6px;
+        
+        z-index: 10;
+        width: 400px;
+        background-color: white;
+        
+        
+      }
+    }
+    
+  </style>
+
+  <div class="container p-5 " id="form-show">
+    <button type="button" id="btnx" class="btn-close btn-form d-flex justify-content-end" aria-label="Close"></button>
+    <div class="row d-flex second justify-content-center">
+      <div class="row">
+        <h2 class="text-center">Make an Enquiry</h2>
+
+      </div>
+      <div class="row ">
+        <div class="col-12 form-floating mb-3 inputs">
+          <input type="text" class="form-control form-control-lg pt-1"  id="floatingInput" placeholder="Enter Your Name">
+          
+          <label for="floatingInput">Enter Your Name</label>
+        </div>
+        <div class="col-12 form-floating mb-3">
+          <input type="text" class="form-control form-control-lg "  id="floatingInput" placeholder="Enter Your Phone No.">
+          <label for="floatingInput">Enter Your Phone No.</label>
+        </div>
+        <div class="col-12 form-floating mb-3">
+          <input type="text" class="form-control form-control-lg "  id="floatingInput" placeholder="Enter Your Email">
+          <label for="floatingInput">Enter Your Email</label>
+        </div>
+       
+      </div>
+      <div class="row ">
+        <div class="col d-flex justify-content-center mt-3">
+          <button class="">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
       eval(mod_pagespeed_2xVASK7807);
   </script>
@@ -1115,6 +1198,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   </script>
 
   <script>
+    var btnsh=document.getElementById('btnshow');
+    var formshow=document.getElementById('form-show');
+    btnsh.addEventListener('click',function(){
+      formshow.style.display='block'
+    })
+
+    var btnx=document.getElementById('btnx');
+    btnx.addEventListener('click',function(){
+      formshow.style.display='none'
+    })
       if ($(window).width() < 767) {
           $('.bxslider').bxSlider({
               auto: true,
