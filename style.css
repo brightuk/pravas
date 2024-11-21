@@ -331,3 +331,18 @@
   cursor: pointer;
 }
 /* ends gallery css */
+
+.facebook:hover {
+  color: blue;
+}
+
+.instagram:hover {
+  color: #e11d74;
+}
+
+.twitter:hover {
+  color: #00adb5;
+}
+.github:hover {
+  color: black;
+}
