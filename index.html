@@ -46,6 +46,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       }
       .wid{
         width: 100%;
+        
       }
       .para p{
         margin-top: 25px;
@@ -62,8 +63,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         font-weight: 700;
       }
       .gal{
-        margin-top: 20px;
-       
+        margin-bottom: -10px;
       }
       .icon-img{
         width: 70px;
@@ -80,6 +80,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         
         box-sizing: border-box;
         padding: 10px;
+        
         
         
       }
@@ -131,46 +132,71 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         }
       }
       /* Icons style */
-      
-       .fa-brands {
-            height: 24px;
-            width: 25px;
-            color:white;
-            
-            border-radius: 35px;
-            text-align: center;
-       
-        }
+      .fa-facebook{
+        height: 21px;
+        width: 21px;
+  transition: all 0.3s ease;
+      }
+      .fa-facebook:hover{
+        color: #1877F2;
+        background-color: white;
+        height: 21px;
+        width: 21px;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+        border-radius: 50%;
+      }
+.fa-twitter{
+  height: 21px;
+  width: 21px;
+  transition: all 0.3s ease;
+}
+      .fa-twitter:hover {
+        background-color: white;
+        height: 21px;
+        width: 22px;
+  border-radius: 50%;
+  display: flex;
+       justify-content: center;
+       align-items: center;
+  color: #1DA1F2; /* Twitter blue color on hover */
+}
 
-         a i {
-            transition: all 0.3s ease-in;
-        }
+.fa-pinterest {
+  height: 21px;
+  width: 21px;
+  color: white; /* Pinterest icon will be white by default */
+  transition:all 0.3s ease; /* Smooth color transition on hover */
+}
+.fa-pinterest:hover {
+  background-color: white;
+  height: 21px;
+  border-radius: 50%;
+  width: 21px;
+  display: flex;
+       justify-content: center;
+       align-items: center;
+  color: #E60023; /* Pinterest red color on hover */
+}
 
-        a:hover i {
-            transform: all 0.4s;
-        }  
-      .fa-facebook:hover {
-            color: blue;
-            background-color: white;
-            border-radius: 50%;
-        }
+.fa-instagram{
+  height: 21px;
+  width: 21px;
+  color: white; /* Instagram icon will be white by default */
+  
+}
+.fa-instagram:hover{
+  border-radius: 50%;
+  background-color: white;
+  height: 21px;
+  width: 21px;
+  display: flex;
+       justify-content: center;
+       align-items: center;
+  color: #E4405F; /* Instagram's brand pink-red color on hover */
+}
 
-        .fa-instagram:hover {
-            color: #e11d74;
-            background-color: white;
-            border-radius: 50%;
-        }
-
-        .fa-twitter:hover {
-            color: #00adb5;
-            background-color: white;
-            border-radius: 50%;
-        }
-        .fa-pinterest:hover {
-            color: 	#E60023;
-            background-color: white;
-            border-radius: 50%;
-        }
 
     </style>
   </head>
@@ -197,11 +223,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       >
      </div>
      
-     <div style="font-weight: 400; font-size: 18px;line-height: 21px;" class="col-2 d-flex ">
-      <i class="fa-brands fa-facebook me-3 d-flex justify-content-center align-items-center"></i>
-      <i class="fa-brands fa-twitter me-3 d-flex justify-content-center align-items-center "></i>
-      <i class="fa-brands fa-instagram me-3 d-flex justify-content-center align-items-center "></i>
-      <i class="fa-brands fa-pinterest d-flex justify-content-center align-items-center "></i>
+     <div style="font-weight: 400; font-size: 21px;line-height: 21px;" class="col-2 d-flex ">
+      <i class="fa-brands fa-facebook me-3"></i>
+      <i class="fa-brands fa-twitter me-3 "></i>
+      <i class="fa-brands fa-instagram me-3 "></i>
+      <i class="fa-brands fa-pinterest  "></i>
      </div>
 
        
@@ -659,13 +685,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                           <li class="slide1">
                               <div class="dine_slider_box flower_bg">
                                   <div class="dine_img_box">
-                                      <img src="images/xWedding-Engagement-Hall.jpg.pagespeed.ic.pkTBWGdFJG.jpg" alt "Best Restaurent in Santacruz" />
+                                      <img src="images/xWedding-Engagement-Hall.jpg.pagespeed.ic.pkTBWGdFJG.jpg" alt="Best Restaurent in Santacruz" />
                                   </div>
                                   <div class="dine_right_box">
                                       <div class="dine_right_inner">
                                           <h3>Wedding & Engagement Hall</h3>
                                           <p>We provide a mesmerizing party hall for our esteemed clients, where they can enjoy their all types of parties for birthday, business, cocktail party, and other personal party programs with full of zeal.
-                                          </p>                                          <a class="book_now_btn book_table_btn testxx" href="events.html">Read More</a>
+                                          </p>                                          
+                                          <a class="book_now_btn book_table_btn testxx" href="events.html">Read More</a>
                                       </div>
                                   </div>
                               </div>
@@ -751,65 +778,65 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   
     
     <div class="container-fluid hole-image">
-          <div class="container wid">
-            <div class="row text-center ">
-              <p class="head1 text-white h3">CELEBRATE YOUR SPECIAL DAY AT THE BEST WEDDING VENUES IN CHENNAI</p>
-              <div class="d-flex justify-content-center">
-                <img class="im " src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/white-150x16.png" alt="">
-              </div>
-             
-  
-            </div>
-            
-            <div class="row text-center">
-              <p class="text-white headcon">Chennai Convention Centre is your one-stop destination to conduct any event of your choice with perfection that exceeds expectations!We are forever committed to actualizing the dreams of every bride and groom out there on their special day. We are also equipped with a professional team of expert staff members who leaves no stone unturned to ensure that your day turns out to be the most memorable day ever.</p>
-            </div>
-            <div class="row bg-white para gal">
-              <div class="col-md-4 text-center p-4 bor bor1  h">
-                <div class="imgs">
-                  <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/Grand-wedding-icon.png" alt="">
-                </div>
-                <p>GRAND WEDDING</p>
-                
-              </div>
-              
-              
-              <div class="col-md-4 text-center p-4 bor bor2 h">
-                <div class="imgs">
-                  <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/1.png" alt="">
-                </div>
-                <p>Whimsical Birthday Parties</p>
-              </div>
-              <div class="col-md-4 text-center p-4  bor bor3  h">
-                <div class="imgs">
-                  <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/3-1.png" alt="">
-                </div>
-                <p>Exquisite Corporate Events</p>
-              </div>
-              
-            </div>
-           
-            <div class="row bg-white para">
-              <div class="col-md-4 text-center p-4  bor bor4 h">
-                <div class="imgs">
-                  <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/4-1.png" alt="">
-                </div>
-                <p>Cozy And Sweet- Small Family Functions</p>
-              </div>
-              <div class="col-md-4 text-center p-4  bor bor5 h">
-                <div class="imgs">
-                  <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/5.png" alt="">
-                </div>
-                <p>Fun And Frolic- Family Get Together’s</p>
-              </div>
-              <div class="col-md-4 text-center  p-4 bor bor6 h">
-                <div class="imgs">
-                  <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/6.png" alt="">
-                </div>
-                <p>Awe-Inspiring & Happening- Exhibitions</p>
-              </div>
-            </div>
+      <div class="container wid">
+        <div class="row text-center ">
+          <p class="head1 text-white h3">CELEBRATE YOUR SPECIAL DAY AT THE BEST WEDDING VENUES IN CHENNAI</p>
+          <div class="d-flex justify-content-center">
+            <img class="im " src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/white-150x16.png" alt="">
           </div>
+        </div>
+            
+        <div class="row text-center">
+          <p class="text-white headcon">Chennai Convention Centre is your one-stop destination to conduct any event of your choice with perfection that exceeds expectations!We are forever committed to actualizing the dreams of every bride and groom out there on their special day. We are also equipped with a professional team of expert staff members who leaves no stone unturned to ensure that your day turns out to be the most memorable day ever.</p>
+        </div>
+        <div class="row bg-white para gal">
+          <div class="col-md-4 text-center p-4 bor bor1  h">
+            <div class="imgs">
+              <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/Grand-wedding-icon.png" alt="">
+            </div>
+            <p>GRAND WEDDING</p>
+            
+          </div>
+          
+          
+          <div class="col-md-4 text-center p-4 para bor bor2 h">
+            <div class="imgs">
+              <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/1.png" alt="">
+            </div>
+            <p>Whimsical Birthday Parties</p>
+          </div>
+          <div class="col-md-4 text-center p-4 para bor bor3  h">
+            <div class="imgs">
+              <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/3-1.png" alt="">
+            </div>
+            <p>Exquisite Corporate Events</p>
+          </div>
+          
+        </div>
+        <div class="row bg-white gal">
+          <div class="col-md-4 text-center p-4 para bor bor4 h">
+            <div class="imgs">
+              <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/4-1.png" alt="">
+            </div>
+            <p>Cozy And Sweet- Small Family Functions</p>
+          </div>
+          <div class="col-md-4 text-center p-4 para bor bor5 h">
+            <div class="imgs">
+              <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/5.png" alt="">
+            </div>
+            <p>Fun And Frolic- Family Get Together’s</p>
+          </div>
+          <div class="col-md-4 text-center para p-4 bor bor6 h">
+            <div class="imgs">
+              <img class="icon-img" src="https://www.chennaiconventioncentre.com/wp-content/uploads/2018/11/6.png" alt="">
+            </div>
+            <p>Awe-Inspiring & Happening- Exhibitions</p>
+          </div>
+        </div>
+           
+           
+      
+      </div>
             
     </div>
     
@@ -1071,10 +1098,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     #form-show{
       display: none;
       position: fixed;
-      top: 55%;
-      left: 50%;
-      z-index: 100;
-    transform: translate(-50%,-50%);
+      top: 20%;
+      left: 36%;
+      z-index: 10;
       width: 500px;
       background-color: white;
       
@@ -1097,12 +1123,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       position: relative;
     }
     .btn-form{
-      z-index: 101;
       position: absolute;
       right: 15px;
       top: 15px;
     }
-    /* @media screen and (max-width: 576px) {
+    @media screen and (max-width: 576px) {
       #form-show{
         
         position: fixed;
@@ -1115,7 +1140,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         
         
       }
-    } */
+    }
     #form-show h2{
       color: #1877F2;
     }
@@ -1188,9 +1213,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   </style>
 
   <div class="container p-5 " id="form-show">
-    <div class="row d-flex justify-content-center align-items-center">
-
-    
     <button type="button" id="btnx" class="btn-close btn-form d-flex justify-content-end" aria-label="Close"></button>
     <div class="row d-flex second justify-content-center">
       <div class="row">
@@ -1220,7 +1242,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </div>
       </div>
     </div>
-  </div>
   </div>
 
   <script>
